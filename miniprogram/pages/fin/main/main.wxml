@@ -1,0 +1,82 @@
+<!-- miniprogram/pages/fin/main/main.wxml -->
+<view class="main__wrapper">
+  <view class="scene">
+    <view class="card {{ mode ? 'is-flipped' : '' }}">
+      <view class="card__face card__face--front">
+        <view class="daily__summary__wrapper">
+    <view class="daily__summary section">
+      <view class="profile">
+        <!-- <image src="https://personal-1252740566.cos.ap-guangzhou.myqcloud.com/fin-view/WechatIMG35.jpeg" mode="aspectFit" /> -->
+        <image src="{{avatarUrl}}" mode="aspectFit" />
+      </view>
+      <view class="info">
+        <view>你今日已收入</view>
+        <view class="consume-number">2034.50 ¥</view>
+      </view>
+      <view class="switch__button__wrapper">
+        <view class="switch__button" bindtap="toggleMode">
+          收入
+          <mp-icon class="icon" icon="arrow" color="white" size="{{10}}"></mp-icon>
+        </view>
+      </view>
+    </view>
+  </view>
+      </view>
+      <view class="card__face card__face--back">
+
+        <view class="daily__summary__wrapper">
+    <view class="daily__summary section">
+      <view class="profile">
+        <image src="https://personal-1252740566.cos.ap-guangzhou.myqcloud.com/fin-view/WechatIMG35.jpeg" mode="aspectFit" />
+      </view>
+      <view class="info">
+        <view>你今日已支出</view>
+        <view class="consume-number">2034.50 ¥</view>
+      </view>
+      <view class="switch__button__wrapper">
+        <view class="switch__button" bindtap="toggleMode">
+          支出
+          <mp-icon class="icon" icon="arrow" color="white" size="{{10}}"></mp-icon>
+        </view>
+      </view>
+    </view>
+  </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="summary__pannel section">
+    <view class="text__h2">统计视图</view>
+    <view class="summary__card__wrapper">
+      <overview-card 
+        name="{{ item.name }}" 
+        amount="{{ item.amount }}" 
+        isActive="{{ item.key === activeKey }}" 
+        wx:for="{{ overviewData }}" 
+        wx:key="key"
+        mark:key="{{ item.key }}"
+        bindtap="handleOverviewClick"
+        mode="{{ mode }}"
+      />
+    </view>
+  </view>
+
+  <view class="transaction__pannel section">
+    <view class="text__h2">最近记录</view>
+    <view class="transaction__list__wrapper">
+      <transaction-item 
+        type="{{ item.type }}" 
+        amount="{{ item.amount }}" 
+        wx:for="{{ transactionData }}" 
+        wx:key="key"
+        mark:key="{{ item.id }}"
+        mode="{{ mode }}"
+      />
+    </view>
+  </view>
+
+  <view class="menu__operation">
+    A
+  </view>
+</view>

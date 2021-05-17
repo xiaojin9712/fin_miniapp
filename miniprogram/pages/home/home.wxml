@@ -1,0 +1,41 @@
+<view class="home__wrapper" wx:if="{{ isAuthorize }}">
+  <view class="search__wrapper">
+    <input class="search" placeholder="你今天想知道什么？"/>
+  </view>
+  <view class="section__title">
+    小工具｜Tools
+  </view>
+  <view class="section__wrapper">
+    <view class="item">
+      <view class="label" bindtap="bindFinClick">记账本</view>
+    </view>
+    <!-- <view class="item">
+      <view class="label">必做的100件事</view>
+    </view> -->
+    <!-- <view class="item">
+      <view class="label">记分器</view>
+    </view> -->
+    <view class="item">
+      <view class="label">暂未开放</view>
+    </view>
+  </view>
+
+  <view class="section__title">
+    小记录｜Memories
+  </view>
+  <view class="section__wrapper">
+    <view class="item">
+      <view class="label">纪念日</view>
+    </view>
+    <!-- <view class="item">
+      <view class="label">“我想你了”</view>
+    </view> -->
+  </view>
+</view>
+
+<view wx:else class="home__authorize">
+  <view class="code__wrapper">
+    <input class="code"  maxlength="10" bindinput="bindCodeInput" placeholder="请输入你的邀请码"/>
+  </view>
+  <button class="button__auth" wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+</view>

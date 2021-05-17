@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "mp-icon": "weui-miniprogram/icon/icon",
+    "overview-card": "../../../components/fin/overview-card/overview-card",
+    "transaction-item": "../../../components/fin/transaction-item/transaction-item"
+  }
+}

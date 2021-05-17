@@ -1,0 +1,12 @@
+<view class="transaction__item transaction__item__active">
+        <view class="type__icon">
+          <image src="https://personal-1252740566.cos.ap-guangzhou.myqcloud.com/fin-view/comunication.png" mode="aspectFit" class="image"></image>
+        </view>
+        <view class="type__info">
+          <view class="label">出门浪 🌊</view>
+          <view class="time">2021-01-20 23:23:67</view>
+        </view>
+        <view class="type__amount">
+          23.00
+        </view>
+      </view>

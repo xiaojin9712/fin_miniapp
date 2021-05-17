@@ -1,0 +1,13 @@
+<view class="home__wrapper">
+  <view class="home__pannel">
+    <text class="text__h1">记录每一笔支出</text>
+
+    <text class="banner__text text_caption">取之有度，用之有节，则常足
+    </text>
+
+    <button class="banner__btn" bindtap="handleEnterClick">立即使用</button>
+  </view>
+  <view class="banner__wrapper">
+    <image class="banner__img" src="https://personal-1252740566.cos.ap-guangzhou.myqcloud.com/fin-view/bg.png" mode="widthFix" />
+  </view>
+</view>

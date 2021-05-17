@@ -1,0 +1,57 @@
+/* pages/fin/welcome/welcome.wxss */
+.home__wrapper {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: var(--text-color);
+  position: relative;
+}
+.banner__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.banner__img {
+  margin-top: 100rpx;
+  display: block;
+  width: 460rpx;
+  z-index: 1;
+}
+.home__pannel {
+  width: 100%;
+  height: calc(710rpx - 172rpx);
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  border-radius: 80rpx 80rpx 0 0;
+  color: var(--text-dark);
+  padding-top: 172rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+.text__h1 {
+  text-transform: uppercase;
+  font-size: 64rpx;
+  line-height: 96rpx;
+}
+.banner__text {
+  padding: 0 96rpx;
+  margin-top: 24rpx;
+}
+.text_caption {
+  color: var(--text-caption);
+}
+.banner__btn {
+  padding: 36rpx 60rpx;
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 80rpx;
+  margin-top: 48rpx;
+  text-emphasis: none;
+  font-weight: normal;
+}

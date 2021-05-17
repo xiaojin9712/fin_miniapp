@@ -1,0 +1,35 @@
+
+.home__authorize {
+  background: url('https://personal-1252740566.cos.ap-guangzhou.myqcloud.com/fin-view/test.png');
+  background-size: cover;
+  background-color: #120F2A;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.code__wrapper {
+  width: 80%;
+  padding: 32rpx 40rpx ;
+}
+.code {
+  background-color: #fff;
+  padding: 20rpx 40rpx;
+  border-radius: 20rpx;
+  font-size: 24rpx;
+  text-align: center;
+}
+
+.button__auth {
+  padding: 24rpx 32rpx;
+  color: #fff;
+  background-color: var(--primary-color);
+  border-radius: 80rpx;
+  margin-top: 16rpx;
+  text-emphasis: none;
+  font-weight: normal;
+  font-size: 32rpx;
+}

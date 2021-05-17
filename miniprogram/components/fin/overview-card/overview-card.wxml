@@ -1,0 +1,8 @@
+<view class="summary__card {{isActive ? 'summary__card__active' : ''}} {{ isActive && mode === 1 ? 'summary__card__active__outcome' : '' }}">
+        <view class="transaction__name">{{ name }}</view>
+        <view class="transaction__amount">¥ {{ amount }}</view>
+        <view class="transaction__decoration">
+          <view class="circle left__circle"></view>
+          <view class="circle right__circle"></view>
+        </view>
+      </view>

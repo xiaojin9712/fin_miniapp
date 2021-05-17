@@ -1,0 +1,8 @@
+<!--index.wxml-->
+
+<view class="home__authorize">
+  <view class="code__wrapper">
+    <input class="code"  maxlength="10" bindinput="bindCodeInput" placeholder="请输入你的邀请码"/>
+  </view>
+  <button class="button__auth" bindtap="bindGetUserInfo">授权登录</button>
+</view>

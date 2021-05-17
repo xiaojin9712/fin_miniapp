@@ -1,0 +1,9 @@
+<!--components/loading/loading.wxml-->
+<view class="spinner-box">
+  <view class="configure-border-1">  
+    <view class="configure-core"></view>
+  </view>  
+  <view class="configure-border-2">
+    <view class="configure-core"></view>
+  </view> 
+</view>
